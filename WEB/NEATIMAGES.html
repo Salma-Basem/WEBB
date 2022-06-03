@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> IMAGE SLIDER</title>
+    <style type="text/css">
+        #slider
+        {
+            overflow:hidden;
+        }
+
+        #slider figure
+        {
+            position:relative;
+            width:500%;
+            margin:0;
+            left:0;
+            animation:10s slider infinite;
+           
+        }
+
+            #slider figure img {
+                float: left;
+                width: 20%;
+                opacity: 0.7;
+            }
+
+        @keyframes slider
+        {
+            0%
+            {
+                left:0;
+            }
+
+            20% 
+            {
+                left: 0;
+            }
+
+            25%
+            {
+                left:-100%;
+            }
+            45%
+            {
+                left:-100%;
+            }
+
+            50% 
+            {
+                left: -200%;
+            }
+
+            70% 
+            {
+                left: -200%;
+            }
+
+            75%
+            {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+
+            100% 
+            {
+                left: -400%;
+            }
+
+
+        }
+
+        .bg-text {
+            background-color: white; /* Fallback color */
+            background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
+            color: grey;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* border: 3px solid #f1f1f1;*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <figure>
+            <img src="webImages/ImageHandler.jpg" />
+            <img src="webImages/ImageHandler (2).jpg" />
+            <img src="webImages/qqqqqqqqqqq.jpg" />
+            <img src="webImages/Screen-Shot-2017-11-26-at-3.43.41-AM-1347x800.jpg" />
+            <img src="webImages/ImageHandler (1).jpg" />
+        </figure>
+
+        <div class="bg-text">
+            <marquee direction="right">
+                <font-family = "Arial ">
+
+                    <h1 style="font-size:100px">Unleashing human potential</h1>
+                    <h2>We embrace diversity,individuality,and encourage a culture of open-mindedness</h2>
+
+                </font-family>               
+
+            </marquee>
+        </div>
+
+    </div>
+
+    <!--<div class="bg-text">
+        <marquee direction="right">
+        <h1 style="font-size:50px">Unleashing human potential</h1>
+        <h2>We embrace diversity,individuality,and encourage a culture of open-mindedness</h2>
+         
+            </marquee>
+    </div>-->
+</body>
+</html>

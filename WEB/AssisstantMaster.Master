@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AssisstantMaster.Master.cs" Inherits="Regestration.AssisstantHomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 228px;
+        }
+        .auto-style3 {
+            width: 192px;
+        }
+        .auto-style4 {
+            width: 252px;
+        }
+        .auto-style5 {
+            width: 113px;
+        }
+        .auto-style6 {
+            height: 29px;
+            width: 1393px;
+        }
+        .auto-style7 {
+            width: 161px;
+        }
+        .auto-style8 {
+            width: 205px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1" style="background-color: #CCCCCC">
+                <tr>
+                    <td class="auto-style2">
+                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" />
+                                </td>
+                    <td>
+                                    <asp:Label ID="lblgMsg" runat="server" Font-Bold="True" Font-Names="Arial Black" ForeColor="#000066"></asp:Label>
+                                </td>
+                </tr>
+            </table>
+            <table class="auto-style6" style="background-color: #999999">
+                <tr>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AssisstantHome.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/AssistantUpdateSchdule.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Student&#39;s schedule</asp:HyperLink>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/GradesSheetAssistant.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Grade Quizes</asp:HyperLink>
+                    </td>
+                    <td class="auto-style3">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AssistantAssignmentGrade.aspx.cs" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Assignments</asp:HyperLink>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699" NavigateUrl="~/AttendanceAssistant.aspx">Attendance</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699" NavigateUrl="~/AssistantApprove.aspx">Approve schedule</asp:HyperLink>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </form>
+</body>
+</html>
