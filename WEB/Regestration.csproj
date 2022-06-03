@@ -73,9 +73,9 @@
     <Content Include="AddAssginmentGradeAssistant.aspx" />
     <Content Include="AddDoctorGradeAssignment.aspx" />
     <Content Include="AddGrade.aspx" />
-    <Content Include="App_Data\Project.mdf" />
-    <Content Include="App_Data\Project_log.ldf">
-      <DependentUpon>Project.mdf</DependentUpon>
+    <Content Include="App_Data\project.mdf" />
+    <Content Include="App_Data\project_log.ldf">
+      <DependentUpon>project.mdf</DependentUpon>
     </Content>
     <Content Include="AssignmentStudent.aspx" />
     <Content Include="AssistantAddGrade.aspx" />
