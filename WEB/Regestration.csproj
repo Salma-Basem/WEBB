@@ -73,20 +73,25 @@
     <Content Include="AddAssginmentGradeAssistant.aspx" />
     <Content Include="AddDoctorGradeAssignment.aspx" />
     <Content Include="AddGrade.aspx" />
-    <Content Include="App_Data\project.mdf" />
-    <Content Include="App_Data\project_log.ldf">
-      <DependentUpon>project.mdf</DependentUpon>
+    <Content Include="App_Data\Project.mdf" />
+    <Content Include="App_Data\Project_log.ldf">
+      <DependentUpon>Project.mdf</DependentUpon>
     </Content>
     <Content Include="AssignmentStudent.aspx" />
     <Content Include="AssistantAddGrade.aspx" />
     <Content Include="AssistantApprove.aspx" />
     <Content Include="AssistantApproveSchedule.aspx" />
     <Content Include="AssistantAssignmentGrade.aspx" />
+    <Content Include="AssistantUpdateSchdule.aspx" />
     <Content Include="AttendanceAssistant.aspx" />
+    <Content Include="AttendanceSheet.aspx" />
     <Content Include="BlurBackground.html" />
     <Content Include="coursepage.aspx" />
     <Content Include="DoctorApprove.aspx" />
     <Content Include="DoctorAssignmentGrade.aspx" />
+    <Content Include="DoctorCourses.aspx" />
+    <Content Include="DoctorGradedExams.aspx" />
+    <Content Include="DoctorHome.aspx" />
     <Content Include="dropmenu.aspx" />
     <Content Include="Footer.html" />
     <Content Include="FUEevent.html" />
@@ -112,30 +117,29 @@
     <Content Include="PERSONlogin.aspx" />
     <Content Include="personSignUP.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="registrationpage.aspx" />
     <Content Include="responsiveWebsite.html" />
     <Content Include="Result.aspx" />
     <Content Include="schedule.aspx" />
     <Content Include="searchICON.html" />
+    <Content Include="SignaUpp.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="sliderimage.html" />
+    <Content Include="student.sql" />
+    <Content Include="StudentAttendance.aspx" />
     <Content Include="StudentCard.aspx" />
     <Content Include="StudentCourseList.aspx" />
+    <Content Include="StudentCourses.aspx" />
+    <Content Include="StudentGrades.aspx" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="StudentList.aspx" />
     <Content Include="Studentprofile.aspx" />
     <Content Include="StudentSCHEDULE.aspx" />
     <Content Include="StudentsCourseDetails.aspx" />
     <Content Include="StyleSheet1.css" />
-    <Content Include="AssistantUpdateSchdule.aspx" />
     <Content Include="Web.config" />
-    <Content Include="SignUp.aspx" />
-    <Content Include="StudentHome.aspx" />
-    <Content Include="StudentCourses.aspx" />
-    <Content Include="StudentGrades.aspx" />
-    <Content Include="StudentAttendance.aspx" />
-    <Content Include="DoctorCourses.aspx" />
-    <Content Include="DoctorHome.aspx" />
-    <Content Include="AttendanceSheet.aspx" />
-    <Content Include="StudentList.aspx" />
-    <Content Include="DoctorGradedExams.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="StudentSignOut.aspx" />
     <Content Include="webImages.html" />
     <Content Include="webImages\0c8244cbb55cfc3f786145e4d7cdf9bf.jpg" />
     <Content Include="webImages\1111111111.jpg" />
@@ -161,8 +165,10 @@
     <Content Include="webImages\OIP.jpg" />
     <Content Include="webImages\qqqqqqqqqqq.jpg" />
     <Content Include="webImages\Screen-Shot-2017-11-26-at-3.43.41-AM-1347x800.jpg" />
+    <Content Include="webImages\ssssssss.jpeg" />
     <Content Include="webImages\various-book-books-college.jpg" />
     <Content Include="webImages\wwwwq.jpg" />
+    <Content Include="webImages\wwwwwwwwwwwwww.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddAssginmentGradeAssistant.aspx.cs">
@@ -228,12 +234,26 @@
     <Compile Include="AssistantAssignmentGrade.aspx.designer.cs">
       <DependentUpon>AssistantAssignmentGrade.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AssistantUpdateSchdule.aspx.cs">
+      <DependentUpon>AssistantUpdateSchdule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistantUpdateSchdule.aspx.designer.cs">
+      <DependentUpon>AssistantUpdateSchdule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AttendanceAssistant.aspx.cs">
       <DependentUpon>AttendanceAssistant.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AttendanceAssistant.aspx.designer.cs">
       <DependentUpon>AttendanceAssistant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceSheet.aspx.cs">
+      <DependentUpon>AttendanceSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceSheet.aspx.designer.cs">
+      <DependentUpon>AttendanceSheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="coursepage.aspx.cs">
       <DependentUpon>coursepage.aspx</DependentUpon>
@@ -255,6 +275,27 @@
     </Compile>
     <Compile Include="DoctorAssignmentGrade.aspx.designer.cs">
       <DependentUpon>DoctorAssignmentGrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorCourses.aspx.cs">
+      <DependentUpon>DoctorCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorCourses.aspx.designer.cs">
+      <DependentUpon>DoctorCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorGradedExams.aspx.cs">
+      <DependentUpon>DoctorGradedExams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorGradedExams.aspx.designer.cs">
+      <DependentUpon>DoctorGradedExams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorHome.aspx.cs">
+      <DependentUpon>DoctorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorHome.aspx.designer.cs">
+      <DependentUpon>DoctorHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="DoctorMaster.Master.cs">
       <DependentUpon>DoctorMaster.Master</DependentUpon>
@@ -341,6 +382,13 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="registrationpage.aspx.cs">
+      <DependentUpon>registrationpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registrationpage.aspx.designer.cs">
+      <DependentUpon>registrationpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Result.aspx.cs">
       <DependentUpon>Result.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -354,6 +402,27 @@
     </Compile>
     <Compile Include="schedule.aspx.designer.cs">
       <DependentUpon>schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignaUpp.aspx.cs">
+      <DependentUpon>SignaUpp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignaUpp.aspx.designer.cs">
+      <DependentUpon>SignaUpp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendance.aspx.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAttendance.aspx.designer.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentCard.aspx.cs">
       <DependentUpon>StudentCard.aspx</DependentUpon>
@@ -369,34 +438,6 @@
     <Compile Include="StudentCourseList.aspx.designer.cs">
       <DependentUpon>StudentCourseList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StudentMaster.Master.cs">
-      <DependentUpon>StudentMaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentMaster.Master.designer.cs">
-      <DependentUpon>StudentMaster.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Studentprofile.aspx.cs">
-      <DependentUpon>Studentprofile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Studentprofile.aspx.designer.cs">
-      <DependentUpon>Studentprofile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SignUp.aspx.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignUp.aspx.designer.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StudentHome.aspx.cs">
-      <DependentUpon>StudentHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentHome.aspx.designer.cs">
-      <DependentUpon>StudentHome.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StudentCourses.aspx.cs">
       <DependentUpon>StudentCourses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -411,33 +452,12 @@
     <Compile Include="StudentGrades.aspx.designer.cs">
       <DependentUpon>StudentGrades.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StudentAttendance.aspx.cs">
-      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StudentAttendance.aspx.designer.cs">
-      <DependentUpon>StudentAttendance.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DoctorCourses.aspx.cs">
-      <DependentUpon>DoctorCourses.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DoctorCourses.aspx.designer.cs">
-      <DependentUpon>DoctorCourses.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DoctorHome.aspx.cs">
-      <DependentUpon>DoctorHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DoctorHome.aspx.designer.cs">
-      <DependentUpon>DoctorHome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AttendanceSheet.aspx.cs">
-      <DependentUpon>AttendanceSheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AttendanceSheet.aspx.designer.cs">
-      <DependentUpon>AttendanceSheet.aspx</DependentUpon>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentList.aspx.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
@@ -446,19 +466,19 @@
     <Compile Include="StudentList.aspx.designer.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DoctorGradedExams.aspx.cs">
-      <DependentUpon>DoctorGradedExams.aspx</DependentUpon>
+    <Compile Include="StudentMaster.Master.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DoctorGradedExams.aspx.designer.cs">
-      <DependentUpon>DoctorGradedExams.aspx</DependentUpon>
+    <Compile Include="StudentMaster.Master.designer.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="AssistantUpdateSchdule.aspx.cs">
-      <DependentUpon>AssistantUpdateSchdule.aspx</DependentUpon>
+    <Compile Include="Studentprofile.aspx.cs">
+      <DependentUpon>Studentprofile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AssistantUpdateSchdule.aspx.designer.cs">
-      <DependentUpon>AssistantUpdateSchdule.aspx</DependentUpon>
+    <Compile Include="Studentprofile.aspx.designer.cs">
+      <DependentUpon>Studentprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentSCHEDULE.aspx.cs">
       <DependentUpon>StudentSCHEDULE.aspx</DependentUpon>
@@ -481,14 +501,20 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StudentSignOut.aspx.cs">
+      <DependentUpon>StudentSignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentSignOut.aspx.designer.cs">
+      <DependentUpon>StudentSignOut.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include=".editorconfig" />
-    <Content Include="DoctorMaster.Master" />
     <Content Include="AssisstantMaster.Master" />
+    <Content Include="DoctorMaster.Master" />
     <None Include="packages.config" />
     <Content Include="StudentMaster.Master" />
-    <Content Include="Regestration.zip" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
