@@ -242,8 +242,7 @@ C:\Users\Yasmin\source\repos\WEB\obj\Debug\Regestration.csproj.CoreCompileInputs
 C:\Users\Yasmin\source\repos\WEB\obj\Debug\Regestration.csproj.CopyComplete
 C:\Users\Yasmin\source\repos\WEB\obj\Debug\Regestration.dll
 C:\Users\Yasmin\source\repos\WEB\obj\Debug\Regestration.pdb
-D:\WEBB\WEB\obj\Debug\Regestration.csprojAssemblyReference.cache
-D:\WEBB\WEB\obj\Debug\Regestration.csproj.CoreCompileInputs.cache
+D:\WEBB\WEB\bin\Regestration.dll.config
 D:\WEBB\WEB\bin\Regestration.dll
 D:\WEBB\WEB\bin\Regestration.pdb
 D:\WEBB\WEB\bin\roslyn\csc.exe
@@ -299,6 +298,8 @@ D:\WEBB\WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\WEBB\WEB\bin\System.Data.SqlClient.dll
 D:\WEBB\WEB\bin\System.Data.SqlClient.xml
 D:\WEBB\WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEBB\WEB\obj\Debug\Regestration.csprojAssemblyReference.cache
+D:\WEBB\WEB\obj\Debug\Regestration.csproj.CoreCompileInputs.cache
 D:\WEBB\WEB\obj\Debug\Regestration.csproj.CopyComplete
 D:\WEBB\WEB\obj\Debug\Regestration.dll
 D:\WEBB\WEB\obj\Debug\Regestration.pdb

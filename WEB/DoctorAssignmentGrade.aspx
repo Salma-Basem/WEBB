@@ -59,7 +59,7 @@
             </asp:SqlDataSource>
         </td>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink6" runat="server" BackColor="#003366" Font-Names="Arial" Font-Size="Medium" ForeColor="White" NavigateUrl="~/AddAssginmentGradeAssistant.aspx">Add Grade</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink6" runat="server" BackColor="#003366" Font-Names="Arial" Font-Size="Medium" ForeColor="White" NavigateUrl="~/AddDoctorGradeAssignment.aspx">Add Grade</asp:HyperLink>
             &nbsp;</td>
     </tr>
 </table>

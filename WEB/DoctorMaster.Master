@@ -48,6 +48,9 @@
         .auto-style7 {
             width: 227px;
         }
+        .auto-style8 {
+            width: 204px;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +62,7 @@
                         <table class="auto-style2">
                             <tr>
                                 <td class="auto-style3">
-                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" />
+                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" ImageUrl="~/webImages/ImageHandler (2).jpg" />
                                 </td>
                                 <td>
                                     <asp:Label ID="lblgMsg" runat="server" Font-Bold="True" Font-Names="Arial Black" ForeColor="#000066"></asp:Label>
@@ -82,7 +85,7 @@
                                     <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/MyCoursesDoctor.aspx">My Courses</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/GradedExams.aspx">Graded exams</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/DoctorGradedExams.aspx">Graded exams</asp:HyperLink>
                                 </td>
                                 <td class="auto-style6">
                                     <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/AttendanceSheet.aspx">Attendance Sheet</asp:HyperLink>
@@ -90,10 +93,12 @@
                                 <td class="auto-style7">
                                     <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/DoctorAssignmentGrade.aspx">Assignments Grade</asp:HyperLink>
                                 </td>
-                                <td>
+                                <td class="auto-style8">
                                     <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/DoctorApprove.aspx">Approve schedule</asp:HyperLink>
                                 </td>
-                                <td>&nbsp;</td>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/DoctorSignOut.aspx">Log Out</asp:HyperLink>
+                                </td>
                             </tr>
                         </table>
                     </td>

@@ -19,14 +19,14 @@ namespace Regestration
         {
             // 1- create connection object
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Yasmin\\source\\repos\\WEB\\App_Data\\Project.mdf; Integrated Security = True";
+            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\WEBB\\WEB\\App_Data\\Project.mdf;Integrated Security=True";
             // conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\SYSTEMREGISTERATION_finalproject\\Regestration\\App_Data\\Database1.mdf;Integrated Security=True";
             
             //Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Yasmin\\source\\repos\\WEB\\App_Data\\Project.mdf; Integrated Security = True
             
             //2- create sql seelect statement
 
-            string strSelect = "SELECT * FROM [Person]  "
+            string strSelect = "SELECT * FROM [PERSONN]  "
             + " WHERE Username = '" + txt_UN.Text + "' AND "
             + " Password = '" + txt_PASS.Text + "'";
 
@@ -73,7 +73,7 @@ namespace Regestration
 
                 else
                      if (txt_UN.Text == "Assistant22")
-                    Response.Redirect("~/AssisstantHome.aspx");
+                    Response.Redirect("~/AssistantHome.aspx");
             }
 
             else

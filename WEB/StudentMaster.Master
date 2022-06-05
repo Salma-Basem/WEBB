@@ -37,11 +37,11 @@
         .auto-style10 {
             width: 204px;
         }
-        .auto-style11 {
-            width: 176px;
+        .auto-style14 {
+            width: 198px;
         }
-        .auto-style12 {
-            width: 236px;
+        .auto-style15 {
+            width: 191px;
         }
     </style>
 </head>
@@ -54,7 +54,7 @@
                         <table class="auto-style2">
                             <tr>
                                 <td class="auto-style3">
-                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" />
+                                    <asp:Image ID="Image1" runat="server" Height="185px" ImageUrl="~/webImages/ImageHandler (2).jpg" Width="245px" />
                                 </td>
                                 <td>
                                     <asp:Label ID="lblgMsg" runat="server" Font-Bold="True" Font-Names="Arial Black" ForeColor="#000066"></asp:Label>
@@ -71,7 +71,7 @@
                                     <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/StudentHome.aspx">Student Home</asp:HyperLink>
                                 </td>
                                 <td class="auto-style8">
-                                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/MyAccount.aspx">My account</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/MyAcountt.aspx">My account</asp:HyperLink>
                                 </td>
                                 <td class="auto-style10">
                                     <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/MyCoursesStudent.aspx">My Courses</asp:HyperLink>
@@ -79,16 +79,15 @@
                                 <td class="auto-style7">
                                     <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/StudentGrades.aspx">My Grades</asp:HyperLink>
                                 </td>
-                                <td class="auto-style11">
-                                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/StudentAttendance.aspx">My Attendance</asp:HyperLink>
-                                </td>
-                                <td class="auto-style12">
+                                <td class="auto-style14">
                                     <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/AssignmentStudent.aspx">Assignment</asp:HyperLink>
                                 </td>
-                                <td>
+                                <td class="auto-style15">
                                     <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/StudentCard.aspx">Report Card</asp:HyperLink>
                                 </td>
-                                <td>&nbsp;</td>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink9" runat="server" Font-Bold="True" Font-Names="Arial Nova Light" ForeColor="#0066CC" NavigateUrl="~/SignOutStudent.aspx">Log out</asp:HyperLink>
+                                </td>
                             </tr>
                         </table>
                     </td>

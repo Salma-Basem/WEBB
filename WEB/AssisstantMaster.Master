@@ -33,6 +33,9 @@
         .auto-style8 {
             width: 205px;
         }
+        .auto-style9 {
+            width: 84px;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +44,7 @@
             <table class="auto-style1" style="background-color: #CCCCCC">
                 <tr>
                     <td class="auto-style2">
-                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" />
+                                    <asp:Image ID="imguserpic" runat="server" Height="148px" Width="247px" ImageUrl="~/webImages/ImageHandler (2).jpg" />
                                 </td>
                     <td>
                                     <asp:Label ID="lblgMsg" runat="server" Font-Bold="True" Font-Names="Arial Black" ForeColor="#000066"></asp:Label>
@@ -51,7 +54,7 @@
             <table class="auto-style6" style="background-color: #999999">
                 <tr>
                     <td class="auto-style5">
-                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AssisstantHome.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Home</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AssistantHome.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Home</asp:HyperLink>
                     </td>
                     <td class="auto-style2">
                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/AssistantUpdateSchdule.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Student&#39;s schedule</asp:HyperLink>
@@ -60,7 +63,7 @@
                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/GradesSheetAssistant.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Grade Quizes</asp:HyperLink>
                     </td>
                     <td class="auto-style3">
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AssistantAssignmentGrade.aspx.cs" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Assignments</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AssistantAssignmentGrade.aspx" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699">Assignments</asp:HyperLink>
                     </td>
                     <td class="auto-style4">
                         <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699" NavigateUrl="~/AttendanceAssistant.aspx">Attendance</asp:HyperLink>
@@ -68,8 +71,9 @@
                     <td>
                         <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699" NavigateUrl="~/AssistantApprove.aspx">Approve schedule</asp:HyperLink>
                     </td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Arial" Font-Size="Medium" ForeColor="#336699" NavigateUrl="~/AssistantSignOut.aspx">Sign Out</asp:HyperLink>
+                    </td>
                 </tr>
             </table>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
