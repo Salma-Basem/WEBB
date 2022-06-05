@@ -19,7 +19,7 @@ namespace Regestration
         {
             SqlConnection conn = new SqlConnection();
             //conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|database1.mdf" ;
-            conn.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Yasmin\\source\\repos\\WEB\\App_Data\\Project.mdf; Integrated Security = True";
+            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\WEBB\\WEB\\App_Data\\Project.mdf;Integrated Security=True";
             // Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Yasmin\\source\\repos\\WEB\\App_Data\\Project.mdf; Integrated Security = True
             // create insert statement
             string strINSERT = String.Format("INSERT INTO [AssignmentDoctortGrade] values('{0}','{1}','{2}')", txtGrade.Text, ddlCourse.SelectedItem, txtUName.Text);
